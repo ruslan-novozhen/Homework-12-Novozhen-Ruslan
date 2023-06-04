@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  color: var(--main-dark);
+  font-size: 14px;
+  padding-top: 87px;
+  @media screen and (min-width: 900px) {
+    background-color: var(--main-bg-color);
+    position: relative;
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -176px;
+      width: 960px;
+      height: 1105px;
+      transform: translateX(-50%);
+      z-index: -1;
+      clip-path: polygon(0 41%, 100% 0, 100% 59%, 0% 100%);
+      background: linear-gradient(67.29deg, #9043f2 2.6%, #87dbff 97.97%);
+      border-radius: 30px;
+    }
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -194px;
+      left: 1300px;
+      width: 960px;
+      height: 1105px;
+      transform: translateX(-50%);
+      z-index: -1;
+      clip-path: polygon(0 41%, 100% 0, 100% 59%, 0% 100%);
+      background: linear-gradient(67.29deg, #eff243 2.6%, #f06db4 97.97%);
+      border-radius: 30px;
+    }
+  }
+}
+main {
+  @media screen and (min-width: 900px) {
+    width: 100%;
+    max-width: 840px;
+    background-color: #fff;
+    border-radius: 30px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 1250px) {
+    max-width: 1200px;
+  }
+  @media screen and (min-width: 1400px) {
+    max-width: 1350px;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+.icon {
+  max-width: 75px;
+  max-height: 75px;
+  @media screen and (min-width: 300px) {
+    display: none;
+  }
+  @media screen and (min-width: 767px) {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.center {
+  padding-left: calc(50vw - 125px);
+  padding-right: calc(50vw - 125px);
+
+  @media screen and (min-width: 520px) {
+    padding-left: calc(50vw - 250px);
+    padding-right: calc(50vw - 250px);
+  }
+  @media screen and (min-width: 767px) {
+    padding-left: calc(50vw - 360px);
+    padding-right: calc(50vw - 360px);
+  }
+  @media screen and (min-width: 890px) {
+    padding-left: calc(50vw - 420px);
+    padding-right: calc(50vw - 420px);
+  }
+  @media screen and (min-width: 1250px) {
+    padding-left: calc(50vw - 600px);
+    padding-right: calc(50vw - 600px);
+  }
+  @media screen and (min-width: 1400px) {
+    padding-left: calc(50vw - 675px);
+    padding-right: calc(50vw - 675px);
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
