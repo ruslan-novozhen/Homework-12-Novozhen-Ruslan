@@ -1,5 +1,4 @@
 .nav {
-
   position: absolute;
   top: 0;
   left: 0;
@@ -9,7 +8,7 @@
   pointer-events: none;
   transform: translateX(-100%);
   background: #fff;
-  transition: .5s;
+  transition: 0.5s;
   z-index: 99;
   display: flex;
   flex-direction: column;
@@ -38,6 +37,10 @@
     font-weight: 400;
     text-decoration: none;
     line-height: 1.4;
+
+    &:hover {
+      color: yellow;
+    }
   }
 
   .button {
@@ -90,7 +93,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    transition: .3s;
+    transition: 0.3s;
 
     &:nth-child(1) {
       top: 0;

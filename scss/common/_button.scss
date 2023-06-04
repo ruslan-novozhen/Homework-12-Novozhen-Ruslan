@@ -10,4 +10,9 @@
   border-radius: 3px;
   text-decoration: none;
   padding: 5px 10px;
+
+  &:hover {
+    background: yellow;
+    color: var(--main-dark);
+  }
 }
